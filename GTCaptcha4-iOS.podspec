@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GTCaptcha4-iOS"
-  spec.version      = "1.5.0"
+  spec.version      = "1.5.1"
   spec.summary      = "极验适应性验证SDK。"
   spec.homepage     = "https://www.geetest.com"
   spec.license      = {:type => "MIT", :file => "LICENSE"}
@@ -22,8 +22,5 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = "SDK/GTCaptcha4.framework"
   spec.resources = "SDK/GTCaptcha4.bundle"
-
-  spec.pod_target_xcconfig      = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.user_target_xcconfig     = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
+  
 end
